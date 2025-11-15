@@ -1,0 +1,88 @@
+================================================================================
+RELATÓRIO DE ANÁLISE DE VÍDEO
+================================================================================
+Gerado em: 15/11/2025 às 19:30:09
+
+--------------------------------------------------------------------------------
+INFORMAÇÕES GERAIS
+--------------------------------------------------------------------------------
+Vídeo: video.mp4
+Duração: 00:01:50
+FPS: 30.00
+Resolução: 1280x720
+Total de frames analisados: 3326
+Frames com rostos detectados: 714
+Frames com poses detectadas: 2694
+
+--------------------------------------------------------------------------------
+DETECÇÃO FACIAL
+--------------------------------------------------------------------------------
+Frames com rostos detectados: 714
+Taxa de detecção: 21.47%
+
+--------------------------------------------------------------------------------
+ANÁLISE DE EMOÇÕES
+--------------------------------------------------------------------------------
+TOP 5 EMOÇÕES DOMINANTES:
+  1. Feliz: 48.38%
+  2. Neutro: 20.68%
+  3. Surpresa: 15.14%
+  4. Medo: 7.43%
+  5. Triste: 6.22%
+
+Distribuição completa de emoções:
+  • Feliz: 48.38%
+  • Neutro: 20.68%
+  • Surpresa: 15.14%
+  • Medo: 7.43%
+  • Triste: 6.22%
+  • Raiva: 2.16%
+
+--------------------------------------------------------------------------------
+ATIVIDADES DETECTADAS
+--------------------------------------------------------------------------------
+Atividade principal: crouching
+
+Distribuição de atividades:
+  • Agachado: 1544 detecções
+  • Sentado: 785 detecções
+  • Em pé: 2 detecções
+  • Acenando: 88 detecções
+  • Braços levantados: 258 detecções
+  • Caminhando: 16 detecções
+  • Inclinado: 1 detecções
+
+--------------------------------------------------------------------------------
+ANOMALIAS DETECTADAS
+--------------------------------------------------------------------------------
+Total de anomalias: 192
+
+Anomalias por tipo:
+  • Mudanças emocionais súbitas: 191 ocorrências
+  • Emoções extremas sustentadas: 1 ocorrências
+
+Detalhes das anomalias (primeiras 20):
+  1. [00:00:08] Frame 263: Mudança emocional rápida para sad
+  2. [00:00:08] Frame 267: Mudança emocional rápida para fear
+  3. [00:00:09] Frame 273: Mudança emocional rápida para happy
+  4. [00:00:09] Frame 274: Mudança emocional rápida para sad
+  5. [00:00:09] Frame 275: Mudança emocional rápida para happy
+  6. [00:00:10] Frame 310: Mudança emocional rápida para sad
+  7. [00:00:10] Frame 311: Mudança emocional rápida para happy
+  8. [00:00:24] Frame 722: Mudança emocional rápida para happy
+  9. [00:00:24] Frame 725: Mudança emocional rápida para neutral
+  10. [00:00:24] Frame 726: Mudança emocional rápida para happy
+  11. [00:00:24] Frame 727: Mudança emocional rápida para neutral
+  12. [00:00:24] Frame 728: Mudança emocional rápida para happy
+  13. [00:00:24] Frame 731: Mudança emocional rápida para neutral
+  14. [00:00:24] Frame 732: Mudança emocional rápida para happy
+  15. [00:00:24] Frame 736: Mudança emocional rápida para neutral
+  16. [00:00:24] Frame 737: Mudança emocional rápida para happy
+  17. [00:00:24] Frame 738: Mudança emocional rápida para neutral
+  18. [00:00:24] Frame 742: Mudança emocional rápida para happy
+  19. [00:00:24] Frame 743: Mudança emocional rápida para neutral
+  20. [00:00:25] Frame 771: Mudança emocional rápida para happy
+
+================================================================================
+FIM DO RELATÓRIO
+================================================================================

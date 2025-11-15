@@ -1,0 +1,9 @@
+# Ignore video files
+video.mp4
+
+# Ignore examples folder
+examples/
+
+# Ignore output files
+output/video_processado.mp4
+output/*.mp4

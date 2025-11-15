@@ -1,0 +1,1216 @@
+{
+  "general": {
+    "total_frames": 3326,
+    "frames_with_faces": 714,
+    "frames_with_poses": 2694
+  },
+  "faces": {
+    "detection_rate": "21.47%"
+  },
+  "emotions": {
+    "distribution": {
+      "sad": "6.22%",
+      "happy": "48.38%",
+      "fear": "7.43%",
+      "neutral": "20.68%",
+      "surprise": "15.14%",
+      "angry": "2.16%"
+    },
+    "dominant": "happy",
+    "top_5": [
+      [
+        "happy",
+        "48.38%"
+      ],
+      [
+        "neutral",
+        "20.68%"
+      ],
+      [
+        "surprise",
+        "15.14%"
+      ],
+      [
+        "fear",
+        "7.43%"
+      ],
+      [
+        "sad",
+        "6.22%"
+      ]
+    ]
+  },
+  "activities": {
+    "distribution": {
+      "crouching": 1544,
+      "sitting": 785,
+      "standing": 2,
+      "waving": 88,
+      "arms_up": 258,
+      "walking": 16,
+      "leaning": 1
+    },
+    "dominant": "crouching"
+  },
+  "anomalies": {
+    "total": 192,
+    "by_type": {
+      "rapid_emotion_change": 191,
+      "sustained_extreme_emotion": 1
+    },
+    "details": [
+      {
+        "timestamp": 8.766666666666667,
+        "frame": 263,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 8.9,
+        "frame": 267,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 9.1,
+        "frame": 273,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 9.133333333333333,
+        "frame": 274,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 9.166666666666666,
+        "frame": 275,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 10.333333333333334,
+        "frame": 310,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 10.366666666666667,
+        "frame": 311,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 24.066666666666666,
+        "frame": 722,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 24.166666666666668,
+        "frame": 725,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 24.2,
+        "frame": 726,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 24.233333333333334,
+        "frame": 727,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 24.266666666666666,
+        "frame": 728,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 24.366666666666667,
+        "frame": 731,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 24.4,
+        "frame": 732,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 24.533333333333335,
+        "frame": 736,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 24.566666666666666,
+        "frame": 737,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 24.6,
+        "frame": 738,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 24.733333333333334,
+        "frame": 742,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 24.766666666666666,
+        "frame": 743,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 25.7,
+        "frame": 771,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 25.733333333333334,
+        "frame": 772,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 25.833333333333332,
+        "frame": 775,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 25.866666666666667,
+        "frame": 776,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 25.9,
+        "frame": 777,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 25.933333333333334,
+        "frame": 778,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 26.166666666666668,
+        "frame": 785,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 26.2,
+        "frame": 786,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 26.266666666666666,
+        "frame": 788,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 26.366666666666667,
+        "frame": 791,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 26.433333333333334,
+        "frame": 793,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 26.533333333333335,
+        "frame": 796,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 26.633333333333333,
+        "frame": 799,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 26.7,
+        "frame": 801,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 26.866666666666667,
+        "frame": 806,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 26.966666666666665,
+        "frame": 809,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 27.033333333333335,
+        "frame": 811,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 27.066666666666666,
+        "frame": 812,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 27.1,
+        "frame": 813,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 27.133333333333333,
+        "frame": 814,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 27.366666666666667,
+        "frame": 821,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 27.4,
+        "frame": 822,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 27.433333333333334,
+        "frame": 823,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 27.466666666666665,
+        "frame": 824,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 27.5,
+        "frame": 825,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 27.533333333333335,
+        "frame": 826,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 27.6,
+        "frame": 828,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 27.633333333333333,
+        "frame": 829,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 27.666666666666668,
+        "frame": 830,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 27.766666666666666,
+        "frame": 833,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 27.933333333333334,
+        "frame": 838,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 28.066666666666666,
+        "frame": 842,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 28.133333333333333,
+        "frame": 844,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 28.266666666666666,
+        "frame": 848,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 28.3,
+        "frame": 849,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 31.8,
+        "frame": 954,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para surprise"
+      },
+      {
+        "timestamp": 34.96666666666667,
+        "frame": 1049,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 35.0,
+        "frame": 1050,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para surprise"
+      },
+      {
+        "timestamp": 48.13333333333333,
+        "frame": 1444,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 48.166666666666664,
+        "frame": 1445,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 48.46666666666667,
+        "frame": 1454,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 48.5,
+        "frame": 1455,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 48.86666666666667,
+        "frame": 1466,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 48.93333333333333,
+        "frame": 1468,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 49.766666666666666,
+        "frame": 1493,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 49.833333333333336,
+        "frame": 1495,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 51.8,
+        "frame": 1554,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 51.833333333333336,
+        "frame": 1555,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 51.86666666666667,
+        "frame": 1556,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 52.06666666666667,
+        "frame": 1562,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 52.1,
+        "frame": 1563,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 52.166666666666664,
+        "frame": 1565,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para surprise"
+      },
+      {
+        "timestamp": 52.2,
+        "frame": 1566,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 52.233333333333334,
+        "frame": 1567,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 53.1,
+        "frame": 1593,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 53.13333333333333,
+        "frame": 1594,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 53.266666666666666,
+        "frame": 1598,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 53.3,
+        "frame": 1599,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 53.36666666666667,
+        "frame": 1601,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 53.4,
+        "frame": 1602,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 53.43333333333333,
+        "frame": 1603,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 53.5,
+        "frame": 1605,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 53.666666666666664,
+        "frame": 1610,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 53.7,
+        "frame": 1611,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 53.766666666666666,
+        "frame": 1613,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 53.86666666666667,
+        "frame": 1616,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 55.9,
+        "frame": 1677,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 57.0,
+        "frame": 1710,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para surprise"
+      },
+      {
+        "timestamp": 58.36666666666667,
+        "frame": 1751,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 61.166666666666664,
+        "frame": 1835,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para angry"
+      },
+      {
+        "timestamp": 61.2,
+        "frame": 1836,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 61.233333333333334,
+        "frame": 1837,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 61.266666666666666,
+        "frame": 1838,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 61.4,
+        "frame": 1842,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para angry"
+      },
+      {
+        "timestamp": 61.5,
+        "frame": 1845,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 61.56666666666667,
+        "frame": 1847,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para angry"
+      },
+      {
+        "timestamp": 61.6,
+        "frame": 1848,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 61.7,
+        "frame": 1851,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para angry"
+      },
+      {
+        "timestamp": 61.733333333333334,
+        "frame": 1852,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 61.766666666666666,
+        "frame": 1853,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para angry"
+      },
+      {
+        "timestamp": 61.8,
+        "frame": 1854,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 62.0,
+        "frame": 1860,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 62.03333333333333,
+        "frame": 1861,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para angry"
+      },
+      {
+        "timestamp": 62.06666666666667,
+        "frame": 1862,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 62.3,
+        "frame": 1869,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para angry"
+      },
+      {
+        "timestamp": 62.6,
+        "frame": 1878,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 62.63333333333333,
+        "frame": 1879,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 74.0,
+        "frame": 2220,
+        "type": "sustained_extreme_emotion",
+        "description": "Emoção extrema (fear) sustentada"
+      },
+      {
+        "timestamp": 89.4,
+        "frame": 2682,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 94.73333333333333,
+        "frame": 2842,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 94.76666666666667,
+        "frame": 2843,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 94.83333333333333,
+        "frame": 2845,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 94.93333333333334,
+        "frame": 2848,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 104.8,
+        "frame": 3144,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 104.93333333333334,
+        "frame": 3148,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 104.96666666666667,
+        "frame": 3149,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 105.13333333333334,
+        "frame": 3154,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para angry"
+      },
+      {
+        "timestamp": 105.16666666666667,
+        "frame": 3155,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 106.93333333333334,
+        "frame": 3208,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para angry"
+      },
+      {
+        "timestamp": 106.96666666666667,
+        "frame": 3209,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 107.7,
+        "frame": 3231,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 107.73333333333333,
+        "frame": 3232,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 107.76666666666667,
+        "frame": 3233,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 107.8,
+        "frame": 3234,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 107.86666666666666,
+        "frame": 3236,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 107.9,
+        "frame": 3237,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 108.0,
+        "frame": 3240,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 108.06666666666666,
+        "frame": 3242,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 108.1,
+        "frame": 3243,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 108.2,
+        "frame": 3246,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 108.26666666666667,
+        "frame": 3248,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 108.33333333333333,
+        "frame": 3250,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 108.5,
+        "frame": 3255,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 108.5,
+        "frame": 3255,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 108.53333333333333,
+        "frame": 3256,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 108.53333333333333,
+        "frame": 3256,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 108.6,
+        "frame": 3258,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 108.6,
+        "frame": 3258,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 108.63333333333334,
+        "frame": 3259,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 108.63333333333334,
+        "frame": 3259,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 108.66666666666667,
+        "frame": 3260,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 108.66666666666667,
+        "frame": 3260,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 108.7,
+        "frame": 3261,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 108.73333333333333,
+        "frame": 3262,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 108.73333333333333,
+        "frame": 3262,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 108.8,
+        "frame": 3264,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 108.8,
+        "frame": 3264,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 108.83333333333333,
+        "frame": 3265,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 108.83333333333333,
+        "frame": 3265,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 108.86666666666666,
+        "frame": 3266,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 108.86666666666666,
+        "frame": 3266,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 108.9,
+        "frame": 3267,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 108.9,
+        "frame": 3267,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 109.0,
+        "frame": 3270,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 109.03333333333333,
+        "frame": 3271,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 109.06666666666666,
+        "frame": 3272,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 109.16666666666667,
+        "frame": 3275,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 109.3,
+        "frame": 3279,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 109.43333333333334,
+        "frame": 3283,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 109.5,
+        "frame": 3285,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 109.53333333333333,
+        "frame": 3286,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 109.53333333333333,
+        "frame": 3286,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para surprise"
+      },
+      {
+        "timestamp": 109.56666666666666,
+        "frame": 3287,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 109.56666666666666,
+        "frame": 3287,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 109.6,
+        "frame": 3288,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 109.6,
+        "frame": 3288,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 109.7,
+        "frame": 3291,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 109.73333333333333,
+        "frame": 3292,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 109.73333333333333,
+        "frame": 3292,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 109.76666666666667,
+        "frame": 3293,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 109.76666666666667,
+        "frame": 3293,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 109.8,
+        "frame": 3294,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 109.86666666666666,
+        "frame": 3296,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 109.9,
+        "frame": 3297,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 109.9,
+        "frame": 3297,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 109.93333333333334,
+        "frame": 3298,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 109.93333333333334,
+        "frame": 3298,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 109.96666666666667,
+        "frame": 3299,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para neutral"
+      },
+      {
+        "timestamp": 110.0,
+        "frame": 3300,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para happy"
+      },
+      {
+        "timestamp": 110.03333333333333,
+        "frame": 3301,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 110.06666666666666,
+        "frame": 3302,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 110.16666666666667,
+        "frame": 3305,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 110.23333333333333,
+        "frame": 3307,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 110.3,
+        "frame": 3309,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 110.36666666666666,
+        "frame": 3311,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 110.5,
+        "frame": 3315,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 110.53333333333333,
+        "frame": 3316,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 110.6,
+        "frame": 3318,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 110.63333333333334,
+        "frame": 3319,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 110.66666666666667,
+        "frame": 3320,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 110.73333333333333,
+        "frame": 3322,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      },
+      {
+        "timestamp": 110.76666666666667,
+        "frame": 3323,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para fear"
+      },
+      {
+        "timestamp": 110.8,
+        "frame": 3324,
+        "type": "rapid_emotion_change",
+        "description": "Mudança emocional rápida para sad"
+      }
+    ]
+  }
+}
