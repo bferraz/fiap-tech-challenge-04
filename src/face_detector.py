@@ -22,7 +22,16 @@ class FaceDetector:
         self.mp_face_detection = mp.solutions.face_detection
         self.face_detection = self.mp_face_detection.FaceDetection(
             model_selection=1,  # 1 = modelo completo (melhor para rostos distantes)
-            min_detection_confidence=0.5  # Confiança mínima balanceada
+            min_detection_confidence=0.6  # Aumentado para reduzir falsos positivos
+        )
+        
+        # Inicializar MediaPipe Face Mesh para validação adicional
+        self.mp_face_mesh = mp.solutions.face_mesh
+        self.face_mesh = self.mp_face_mesh.FaceMesh(
+            static_image_mode=False,
+            max_num_faces=5,
+            min_detection_confidence=0.5,
+            min_tracking_confidence=0.5
         )
         
         # Fallback: Haar Cascade para casos extremos
@@ -33,18 +42,110 @@ class FaceDetector:
             cv2.data.haarcascades + 'haarcascade_profileface.xml'
         )
         
+        # Haar Cascade para olhos (validação adicional)
+        self.eye_cascade = cv2.CascadeClassifier(
+            cv2.data.haarcascades + 'haarcascade_eye.xml'
+        )
+        
         # Contador de rostos detectados
         self.total_faces_detected = 0
     
+    def _validate_face_region(self, frame: np.ndarray, bbox: Tuple[int, int, int, int]) -> bool:
+        """
+        Valida se uma região detectada é realmente um rosto usando múltiplas verificações
+        
+        Args:
+            frame: Frame do vídeo
+            bbox: Bounding box da região (x, y, w, h)
+        
+        Returns:
+            True se a região é um rosto válido, False caso contrário
+        """
+        x, y, w, h = bbox
+        
+        # 1. Validação de tamanho mínimo
+        if w < 20 or h < 20:
+            return False
+        
+        # 2. Validação de proporção (rostos geralmente são retangulares verticais ou quadrados)
+        aspect_ratio = w / h
+        if aspect_ratio < 0.5 or aspect_ratio > 1.8:  # Muito largo ou muito alto
+            return False
+        
+        # 3. Extrair região
+        face_region = frame[y:y+h, x:x+w]
+        
+        # 4. Verificar cor da pele usando HSV (rostos têm tons de pele característicos)
+        hsv = cv2.cvtColor(face_region, cv2.COLOR_BGR2HSV)
+        
+        # Máscaras para tons de pele (múltiplas faixas para diferentes tons)
+        lower_skin1 = np.array([0, 20, 70], dtype=np.uint8)
+        upper_skin1 = np.array([20, 255, 255], dtype=np.uint8)
+        
+        lower_skin2 = np.array([0, 10, 60], dtype=np.uint8)
+        upper_skin2 = np.array([20, 150, 255], dtype=np.uint8)
+        
+        mask1 = cv2.inRange(hsv, lower_skin1, upper_skin1)
+        mask2 = cv2.inRange(hsv, lower_skin2, upper_skin2)
+        skin_mask = cv2.bitwise_or(mask1, mask2)
+        
+        skin_percentage = np.sum(skin_mask > 0) / (w * h)
+        
+        # Pelo menos 15% da região deve ter tom de pele
+        if skin_percentage < 0.15:
+            return False
+        
+        # 5. Verificar textura (rostos têm textura característica)
+        gray = cv2.cvtColor(face_region, cv2.COLOR_BGR2GRAY)
+        
+        # Desvio padrão (rostos têm variação de intensidade moderada)
+        std_dev = np.std(gray)
+        if std_dev < 15 or std_dev > 80:  # Nem muito uniforme, nem muito ruidoso
+            return False
+        
+        # 6. Verificar gradientes (rostos têm bordas/contornos característicos)
+        edges = cv2.Canny(gray, 50, 150)
+        edge_density = np.sum(edges > 0) / (w * h)
+        if edge_density < 0.03 or edge_density > 0.4:  # Densidade de bordas moderada
+            return False
+        
+        # 7. Tentar detectar olhos na região (forte indicador de rosto)
+        eyes = self.eye_cascade.detectMultiScale(
+            gray,
+            scaleFactor=1.1,
+            minNeighbors=3,
+            minSize=(int(w * 0.1), int(h * 0.1)),  # Olhos são ~10% do rosto
+            maxSize=(int(w * 0.5), int(h * 0.5))
+        )
+        
+        # Se detectou 1 ou 2 olhos, é muito provável que seja um rosto
+        if len(eyes) >= 1:
+            return True
+        
+        # 8. Validação com Face Mesh (verificar se tem landmarks faciais)
+        rgb_region = cv2.cvtColor(face_region, cv2.COLOR_BGR2RGB)
+        mesh_results = self.face_mesh.process(rgb_region)
+        
+        if mesh_results.multi_face_landmarks:
+            # Se Face Mesh detectou landmarks, é definitivamente um rosto
+            return True
+        
+        # Se passou pelas validações básicas mas não detectou olhos nem landmarks,
+        # aceitar se tiver boa pontuação nos critérios anteriores
+        if skin_percentage > 0.25 and 20 < std_dev < 70 and 0.05 < edge_density < 0.35:
+            return True
+        
+        return False
+    
     def detect_faces_mediapipe(self, frame: np.ndarray) -> List[Tuple[int, int, int, int]]:
         """
-        Detecta rostos usando MediaPipe Face Detection
+        Detecta rostos usando MediaPipe Face Detection com validação adicional
         
         Args:
             frame: Frame do vídeo
         
         Returns:
-            Lista de tuplas (x, y, w, h) com as coordenadas dos rostos
+            Lista de tuplas (x, y, w, h) com as coordenadas dos rostos validados
         """
         # Converter BGR para RGB
         rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
@@ -57,6 +158,13 @@ class FaceDetector:
             h, w = frame.shape[:2]
             
             for detection in results.detections:
+                # Verificar score de confiança
+                score = detection.score[0] if hasattr(detection, 'score') else 1.0
+                
+                # Filtrar detecções com confiança muito baixa
+                if score < 0.6:
+                    continue
+                
                 # Obter bounding box
                 bbox = detection.location_data.relative_bounding_box
                 
@@ -72,8 +180,8 @@ class FaceDetector:
                 width = min(width, w - x)
                 height = min(height, h - y)
                 
-                # Validação mínima (apenas para remover detecções muito pequenas)
-                if width > 20 and height > 20:
+                # Validar se é realmente um rosto (não mão, planta, etc)
+                if self._validate_face_region(frame, (x, y, width, height)):
                     faces.append((x, y, width, height))
         
         return faces
@@ -262,3 +370,5 @@ class FaceDetector:
         """Libera recursos do MediaPipe"""
         if hasattr(self, 'face_detection'):
             self.face_detection.close()
+        if hasattr(self, 'face_mesh'):
+            self.face_mesh.close()
