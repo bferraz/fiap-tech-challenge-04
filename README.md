@@ -84,10 +84,8 @@ Após o processamento, você encontrará na pasta `output/`:
 ### ✅ Reconhecimento Facial
 - Detecção automática de rostos
 - Rastreamento entre frames
-- Atribuição de IDs únicos (rosto_1, rosto_2, etc.)
 
 ### ✅ Análise de Emoções
-- Detecção de 7 emoções: feliz, triste, raiva, surpresa, medo, desgosto, neutro
 - Análise frame a frame
 - Estatísticas de emoções por pessoa
 - Emoção dominante no vídeo
@@ -167,23 +165,6 @@ Anomalias por tipo:
   • Mudanças emocionais súbitas: 2 ocorrências
 ```
 
-## 🛠️ Solução de Problemas
-
-### Erro: "Import could not be resolved"
-Isso é apenas um aviso do linter. As bibliotecas serão instaladas com `pip install -r requirements.txt`.
-
-### Erro ao instalar dlib
-No Windows, pode ser necessário instalar o Visual C++ Build Tools:
-https://visualstudio.microsoft.com/visual-cpp-build-tools/
-
-### Vídeo processado está vazio
-Verifique se o codec está correto. Tente alterar `VIDEO_CONFIG['codec']` em `config/settings.py` para `'XVID'` ou `'H264'`.
-
-### Processamento muito lento
-- Reduza a resolução do vídeo
-- Aumente `process_every_n_frames` em `config/settings.py` para processar menos frames
-- Use GPU se disponível
-
 ## 📝 Observações
 
 - O processamento pode ser lento dependendo do tamanho do vídeo e do hardware
@@ -191,9 +172,6 @@ Verifique se o codec está correto. Tente alterar `VIDEO_CONFIG['codec']` em `co
 - Use Python 3.11 para melhor compatibilidade
 - TensorFlow pode mostrar avisos - isso é normal
 
-## 👥 Autores
-
-Bruno Ferraz - RM359670
 
 ## 📄 Licença
 

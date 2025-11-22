@@ -1,7 +1,7 @@
 ================================================================================
 RELATÓRIO DE ANÁLISE DE VÍDEO
 ================================================================================
-Gerado em: 15/11/2025 às 19:30:09
+Gerado em: 22/11/2025 às 18:06:47
 
 --------------------------------------------------------------------------------
 INFORMAÇÕES GERAIS
@@ -11,32 +11,32 @@ Duração: 00:01:50
 FPS: 30.00
 Resolução: 1280x720
 Total de frames analisados: 3326
-Frames com rostos detectados: 714
-Frames com poses detectadas: 2694
+Frames com rostos detectados: 1545
+Frames com poses detectadas: 2769
 
 --------------------------------------------------------------------------------
 DETECÇÃO FACIAL
 --------------------------------------------------------------------------------
-Frames com rostos detectados: 714
-Taxa de detecção: 21.47%
+Frames com rostos detectados: 1545
+Taxa de detecção: 46.45%
 
 --------------------------------------------------------------------------------
 ANÁLISE DE EMOÇÕES
 --------------------------------------------------------------------------------
 TOP 5 EMOÇÕES DOMINANTES:
-  1. Feliz: 48.38%
-  2. Neutro: 20.68%
-  3. Surpresa: 15.14%
-  4. Medo: 7.43%
-  5. Triste: 6.22%
+  1. Neutro: 33.06%
+  2. Feliz: 25.63%
+  3. Triste: 20.66%
+  4. Surpresa: 8.43%
+  5. Medo: 7.31%
 
 Distribuição completa de emoções:
-  • Feliz: 48.38%
-  • Neutro: 20.68%
-  • Surpresa: 15.14%
-  • Medo: 7.43%
-  • Triste: 6.22%
-  • Raiva: 2.16%
+  • Neutro: 33.06%
+  • Feliz: 25.63%
+  • Triste: 20.66%
+  • Surpresa: 8.43%
+  • Medo: 7.31%
+  • Raiva: 4.92%
 
 --------------------------------------------------------------------------------
 ATIVIDADES DETECTADAS
@@ -44,44 +44,43 @@ ATIVIDADES DETECTADAS
 Atividade principal: crouching
 
 Distribuição de atividades:
-  • Agachado: 1544 detecções
-  • Sentado: 785 detecções
-  • Em pé: 2 detecções
-  • Acenando: 88 detecções
-  • Braços levantados: 258 detecções
-  • Caminhando: 16 detecções
-  • Inclinado: 1 detecções
+  • Agachado: 1504 detecções
+  • Acenando: 108 detecções
+  • Sentado: 896 detecções
+  • Braços levantados: 248 detecções
+  • Em pé: 5 detecções
+  • Caminhando: 6 detecções
+  • Inclinado: 2 detecções
 
 --------------------------------------------------------------------------------
 ANOMALIAS DETECTADAS
 --------------------------------------------------------------------------------
-Total de anomalias: 192
+Total de anomalias: 574
 
 Anomalias por tipo:
-  • Mudanças emocionais súbitas: 191 ocorrências
-  • Emoções extremas sustentadas: 1 ocorrências
+  • Mudanças emocionais súbitas: 574 ocorrências
 
 Detalhes das anomalias (primeiras 20):
-  1. [00:00:08] Frame 263: Mudança emocional rápida para sad
-  2. [00:00:08] Frame 267: Mudança emocional rápida para fear
-  3. [00:00:09] Frame 273: Mudança emocional rápida para happy
-  4. [00:00:09] Frame 274: Mudança emocional rápida para sad
-  5. [00:00:09] Frame 275: Mudança emocional rápida para happy
-  6. [00:00:10] Frame 310: Mudança emocional rápida para sad
-  7. [00:00:10] Frame 311: Mudança emocional rápida para happy
-  8. [00:00:24] Frame 722: Mudança emocional rápida para happy
-  9. [00:00:24] Frame 725: Mudança emocional rápida para neutral
-  10. [00:00:24] Frame 726: Mudança emocional rápida para happy
-  11. [00:00:24] Frame 727: Mudança emocional rápida para neutral
-  12. [00:00:24] Frame 728: Mudança emocional rápida para happy
-  13. [00:00:24] Frame 731: Mudança emocional rápida para neutral
-  14. [00:00:24] Frame 732: Mudança emocional rápida para happy
-  15. [00:00:24] Frame 736: Mudança emocional rápida para neutral
-  16. [00:00:24] Frame 737: Mudança emocional rápida para happy
-  17. [00:00:24] Frame 738: Mudança emocional rápida para neutral
-  18. [00:00:24] Frame 742: Mudança emocional rápida para happy
-  19. [00:00:24] Frame 743: Mudança emocional rápida para neutral
-  20. [00:00:25] Frame 771: Mudança emocional rápida para happy
+  1. [00:00:00] Frame 1: Mudança emocional rápida para neutral
+  2. [00:00:00] Frame 1: Mudança emocional rápida para sad
+  3. [00:00:00] Frame 2: Mudança emocional rápida para neutral
+  4. [00:00:00] Frame 3: Mudança emocional rápida para sad
+  5. [00:00:00] Frame 3: Mudança emocional rápida para neutral
+  6. [00:00:00] Frame 4: Mudança emocional rápida para sad
+  7. [00:00:00] Frame 4: Mudança emocional rápida para neutral
+  8. [00:00:00] Frame 4: Mudança emocional rápida para sad
+  9. [00:00:00] Frame 5: Mudança emocional rápida para neutral
+  10. [00:00:00] Frame 6: Mudança emocional rápida para sad
+  11. [00:00:00] Frame 6: Mudança emocional rápida para neutral
+  12. [00:00:00] Frame 7: Mudança emocional rápida para sad
+  13. [00:00:00] Frame 7: Mudança emocional rápida para fear
+  14. [00:00:00] Frame 8: Mudança emocional rápida para neutral
+  15. [00:00:00] Frame 8: Mudança emocional rápida para sad
+  16. [00:00:00] Frame 8: Mudança emocional rápida para neutral
+  17. [00:00:00] Frame 9: Mudança emocional rápida para sad
+  18. [00:00:00] Frame 9: Mudança emocional rápida para neutral
+  19. [00:00:00] Frame 10: Mudança emocional rápida para sad
+  20. [00:00:00] Frame 10: Mudança emocional rápida para neutral
 
 ================================================================================
 FIM DO RELATÓRIO
