@@ -1,9 +1,251 @@
-# Ignore video files
+# =============================================================================
+# GITIGNORE PARA PROJETO PYTHON COM MACHINE LEARNING
+# =============================================================================
+
+# ----- ARQUIVOS DE VÍDEO E MÍDIA -----
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+*.webm
+*.m4v
+*.mpg
+*.mpeg
+*.3gp
+*.ogv
+*.wav
+*.mp3
+*.flac
+*.aac
+*.ogg
+*.wma
+*.m4a
+
+# Arquivos de vídeo específicos do projeto
 video.mp4
+test_video.mp4
+sample_video.mp4
 
-# Ignore examples folder
+# ----- ARQUIVOS DE SAÍDA E PROCESSAMENTO -----
+output/
+outputs/
+results/
+processed/
+temp/
+tmp/
+cache/
+logs/
+*.log
+*.out
+*.err
+
+# ----- PYTHON -----
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.dylib
+*.dll
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ----- AMBIENTES VIRTUAIS -----
+venv/
+env/
+ENV/
+.venv/
+.env/
+.ENV/
+pyvenv.cfg
+pip-selfcheck.json
+
+# ----- JUPYTER NOTEBOOKS -----
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# ----- MACHINE LEARNING / AI -----
+# Modelos treinados
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.onnx
+*.pb
+*.tflite
+*.caffemodel
+*.prototxt
+models/
+checkpoints/
+weights/
+saved_models/
+
+# Datasets grandes
+data/
+dataset/
+datasets/
+*.csv
+*.tsv
+*.json
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+# TensorFlow
+*.tfevents.*
+.tensorboard/
+
+# PyTorch
+lightning_logs/
+
+# MLflow
+mlruns/
+.mlflow/
+
+# Weights & Biases
+wandb/
+
+# ----- IDEs E EDITORES -----
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ----- SISTEMA OPERACIONAL -----
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+
+# ----- CONFIGURAÇÕES E CREDENCIAIS -----
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.crt
+*.cert
+config.json
+secrets.json
+credentials.json
+.secrets/
+
+# ----- OUTROS ARQUIVOS TEMPORÁRIOS -----
+*.backup
+*.bak
+*.old
+*.orig
+*.rej
+*.tmp
+*.temp
+*.swp
+*.swo
+*.lock
+
+# ----- ESPECÍFICOS DO PROJETO -----
 examples/
-
-# Ignore output files
-output/video_processado.mp4
-output/*.mp4
+test_videos/
+sample_data/
+benchmarks/
+experiments/
